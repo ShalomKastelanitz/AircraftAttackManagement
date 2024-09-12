@@ -6,11 +6,11 @@ import json
 
 def weather_score(weather):
     if weather["main"] == "Clear":
-        return 125
+        return 150
     elif weather["main"] == "Clouds":
-        return 90
+        return 100
     elif weather["main"] == "Rain":
-        return 40
+        return 70
     elif weather["main"] == "Stormy":
         return 20
     else:
@@ -19,15 +19,15 @@ def weather_score(weather):
 
 def priority_score(targets):
     if targets["Priority"] == 1:
-        return 70
+        return 40
     elif targets["Priority"] == 2:
-        return 100
+        return 80
     elif targets["Priority"] == 3:
-        return 150
+        return 100
     elif targets["Priority"] == 4:
-        return 200
+        return 150
     elif targets["Priority"] == 5:
-        return 250
+        return 200
     else:
         return 0
 
@@ -35,13 +35,13 @@ def speed_score(targets):
         if targets["speed"] <=1:
             return 150
         elif targets["speed"] <=3:
-            return 120
-        elif targets["speed"] <=5:
             return 100
-        elif targets["speed"] <=7:
+        elif targets["speed"] <=5:
             return 70
+        elif targets["speed"] <=7:
+            return 60
         elif targets["speed"] <= 9:
-            return 50
+            return 40
         elif targets["speed"] <= 10:
             return 0
         else:
@@ -80,19 +80,19 @@ def calculate_distance(x1, y1, x2, y2):
 
 def distance_score(distance):
     if distance <= 200:
-        return 200
-    elif distance <= 400:
-        return 180
-    elif distance <= 700:
-        return 160
-    elif distance <= 900:
-        return 140
-    elif distance <= 1330:
-        return 120
-    elif distance <= 1600:
         return 100
+    elif distance <= 400:
+        return 90
+    elif distance <= 700:
+        return 80
+    elif distance <= 900:
+        return 60
+    elif distance <= 1330:
+        return 50
     elif distance <= 1600:
-        return 70
+        return 40
+    elif distance <= 1600:
+        return 30
 
     elif distance <= 2000:
         return 60
