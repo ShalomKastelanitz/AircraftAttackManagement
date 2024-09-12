@@ -1,0 +1,152 @@
+[
+    {
+        "City": "Tehran",
+        "Priority": 5,
+        "Latitude": 35.6892523,
+        "Longitude": 51.3896004,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 4,
+        "speed": 0.73,
+        "main": "Clear"
+    },
+    {
+        "City": "Baghdad",
+        "Priority": 5,
+        "Latitude": 33.3061701,
+        "Longitude": 44.3872213,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 6.25,
+        "main": "Clear"
+    },
+    {
+        "City": "Damascus",
+        "Priority": 5,
+        "Latitude": 33.5130695,
+        "Longitude": 36.3095814,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 3.66,
+        "main": "Clear"
+    },
+    {
+        "City": "Kabul",
+        "Priority": 4,
+        "Latitude": 34.5260109,
+        "Longitude": 69.1776838,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 0.59,
+        "main": "Clear"
+    },
+    {
+        "City": "Sanaa",
+        "Priority": 4,
+        "Latitude": 15.3538569,
+        "Longitude": 44.2058841,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 98,
+        "speed": 0.73,
+        "main": "Clouds"
+    },
+    {
+        "City": "Riyadh",
+        "Priority": 4,
+        "Latitude": 24.638916,
+        "Longitude": 46.7160104,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 8,
+        "speed": 1.04,
+        "main": "Clear"
+    },
+    {
+        "City": "Cairo",
+        "Priority": 3,
+        "Latitude": 30.0443879,
+        "Longitude": 31.2357257,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 5.11,
+        "main": "Clear"
+    },
+    {
+        "City": "Beirut",
+        "Priority": 3,
+        "Latitude": 33.8959203,
+        "Longitude": 35.47843,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 2.56,
+        "main": "Clear"
+    },
+    {
+        "City": "Amman",
+        "Priority": 3,
+        "Latitude": 31.9515694,
+        "Longitude": 35.9239625,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 1.63,
+        "main": "Clear"
+    },
+    {
+        "City": "Tripoli",
+        "Priority": 2,
+        "Latitude": 32.896672,
+        "Longitude": 13.1777923,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 51,
+        "speed": 6.41,
+        "main": "Rain"
+    },
+    {
+        "City": "Khartoum",
+        "Priority": 2,
+        "Latitude": 15.5635972,
+        "Longitude": 32.5349123,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 53,
+        "speed": 3.06,
+        "main": "Clouds"
+    },
+    {
+        "City": "Mosul",
+        "Priority": 2,
+        "Latitude": 36.3415843,
+        "Longitude": 43.1291386,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 3.9,
+        "main": "Clear"
+    },
+    {
+        "City": "Fallujah",
+        "Priority": 1,
+        "Latitude": 33.3532137,
+        "Longitude": 43.7875674,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 5.48,
+        "main": "Clear"
+    },
+    {
+        "City": "Kandahar",
+        "Priority": 1,
+        "Latitude": 31.6205738,
+        "Longitude": 65.7157573,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 0,
+        "speed": 1.52,
+        "main": "Clear"
+    },
+    {
+        "City": "Marrakesh",
+        "Priority": 1,
+        "Latitude": 31.6258257,
+        "Longitude": -7.9891608,
+        "dt_txt": "2024-09-13 00:00:00",
+        "all": 27,
+        "speed": 1.93,
+        "main": "Clouds"
+    }
+]

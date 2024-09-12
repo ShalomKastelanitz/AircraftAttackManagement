@@ -2,36 +2,36 @@ import requests
 import json
 from datetime import datetime, timezone
 
-# #לקיחת הפרטים מהמיקום ולשים בקובץ חדש
-# # המפתח ל-OpenWeatherMap API
-# api_key = "683e89824b304dc79927246bad29c1ef"
-#
-# # קריאת הנתונים מקובץ ה-JSON הקיים
-# with open('Json_files/targets.json', 'r') as file:
-#     targets_data = json.load(file)
-#
-#
-# # פונקציה לקבלת קו אורך ורוחב של עיר
-# def get_coordinates(city, api_key):
-#     url = f"https://api.openweathermap.org/geo/1.0/direct?q={city}&appid={api_key}"
-#     response = requests.get(url)
-#     data = response.json()
-#
-#     if data:
-#         lat = data[0]["lat"]
-#         lon = data[0]["lon"]
-#         return lat, lon
-#     return None, None
-#
-#
-# # עדכון המבנה עם קווי אורך ורוחב
-# for target in targets_data:
-#     city = target["City"]
-#     lat, lon = get_coordinates(city, api_key)
-#
-#     if lat and lon:
-#         target["Latitude"] = lat
-#         target["Longitude"] = lon
+#לקיחת הפרטים מהמיקום ולשים בקובץ חדש
+# המפתח ל-OpenWeatherMap API
+api_key = "683e89824b304dc79927246bad29c1ef"
+
+# קריאת הנתונים מקובץ ה-JSON הקיים
+with open('Json_files/targets.json', 'r') as file:
+    targets_data = json.load(file)
+
+
+# פונקציה לקבלת קו אורך ורוחב של עיר
+def get_coordinates(city, api_key):
+    url = f"https://api.openweathermap.org/geo/1.0/direct?q={city}&appid={api_key}"
+    response = requests.get(url)
+    data = response.json()
+
+    if data:
+        lat = data[0]["lat"]
+        lon = data[0]["lon"]
+        return lat, lon
+    return None, None
+
+
+# עדכון המבנה עם קווי אורך ורוחב
+for target in targets_data:
+    city = target["City"]
+    lat, lon = get_coordinates(city, api_key)
+
+    if lat and lon:
+        target["Latitude"] = lat
+        target["Longitude"] = lon
 #
 # # # שמירת הנתונים המעודכנים לקובץ JSON
 # # with open('Json_files/targets_with_coordinates.json', 'w') as f:
@@ -82,6 +82,8 @@ for target in targets_data:
         updated_target.update(weather_data)  # עדכון המילון עם נתוני מזג האוויר
         updated_targets_data.append(updated_target)  # הוספת הנתונים המעודכנים לרשימה
 
+with open('Json_files/updated_targets_with_weather.json', 'w') as file:
+    json.dump(updated_targets_data, file, indent=4)
 # הדפסת הנתונים המעודכנים
 print("נתוני הערים עם פרטי מזג האוויר:")
 for data in updated_targets_data:
